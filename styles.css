@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(190, 190, 202);
+}
+
+.user-name,
+.pin {
+  max-width: 6rem;
+  padding: 0.5rem 0;
+  border-radius: 0.8rem;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  height: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.balance {
+  justify-content: space-between;
+  margin: 3rem 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.trans-details {
+  justify-content: space-between;
+}
+
+.current-balance,
+.welcome {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.balance-value {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.movements {
+  background-color: white;
+  padding-bottom: 10rem;
+  border-radius: 0.5rem;
+}
+
+.movement-type {
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.movement-type-dep {
+  background-color: rgb(147, 180, 147);
+}
+.movement-type-wid {
+  background-color: rgb(223, 121, 121);
+}
+.movement-row {
+  padding: 1rem 1rem;
+  align-items: center;
+  border-bottom: 1px solid rgb(233, 218, 218);
+}
+
+.movement-date {
+  font-size: 0.8rem;
+  margin: 0 3rem 0 1rem;
+  text-align: center;
+}
+
+.transfer-trans {
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.trans-intro,
+.loan-intro,
+.closure-intro {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trans-input {
+  width: 4rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+.login-btn2 {
+  margin-left: 0.5rem;
+}
+.transfer-input p,
+.loan-label p,
+.closure-input p {
+  font-size: 0.8rem;
+}
+
+.transfer-label p,
+.closure-label p {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.input2 {
+  margin-left: 0.5rem;
+}
+
+.transfer-trans {
+  background-color: rgb(226, 226, 84);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.loan-trans {
+  background-color: rgb(46, 134, 46);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.acnt-closure-trans {
+  background-color: rgb(238, 79, 79);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.movements {
+  margin: 0 1rem 0 1rem;
+  width: 20rem;
+}
+.summary {
+  margin-right: 1rem;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.value1 {
+  margin-left: 2rem;
+}
+.value2 {
+  margin-left: 1rem;
+}

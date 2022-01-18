@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="myBank.css" />
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <nav>
+    <nav class="d-flex">
       <p class="welcome">Login to get started</p>
       <form class="login">
         <input type="text" class="user-name" placeholder="user" />
         <input type="number" class="pin" placeholder="pin" maxlength="4" />
-        <button class="login-btn">&rarr;</button>
+        <button class="login-btn1 btn">&rarr;</button>
       </form>
     </nav>
     <main class="app">
-      <div class="balance">
+      <div class="balance d-flex">
         <div>
           <p class="current-balance">Current Balance</p>
           <p class="balance-date">
             As of <span class="date"> 05/03/2022</span>
           </p>
         </div>
-        <p class="balance-value">0000</p>
+        <p class="balance-value">0000€</p>
       </div>
+      <div class="trans-details d-flex">
+        <div class="movements">
+          <div class="movement-row row1 d-flex">
+            <div class="movement-type movement-type-dep">2 deposite</div>
+            <div class="movement-date">3 days ago</div>
+            <div class="movement-value value1">4 000€</div>
+          </div>
+          <div class="movement-row row2 d-flex">
+            <div class="movement-type movement-type-wid">1 widrawal</div>
+            <div class="movement-date">3 24/01/2022</div>
+            <div class="movement-value value2">-378€</div>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="transfer-trans d-flex">
+            <p class="trans-intro">Transfer money</p>
 
-      <div class="movements">
-        <div class="movement-row">
-          <div class="movement-type movement-type-dep">deposite</div>
-          <div class="movement-date">3 days ago</div>
-          <div class="movement-value">4000</div>
+            <form class="transfer d-flex">
+              <div class="transfer-input">
+                <input
+                  type="text"
+                  class="transfer-input trans-input"
+                  id="transfer"
+                />
+                <p>Transfer to</p>
+              </div>
+              <div class="transfer-label">
+                <input type="number" class="trans-input input2" />
+
+                <p class="amount">Amount</p>
+              </div>
+              <button class="login-btn2 btn">&rarr;</button>
+            </form>
+          </div>
+          <div class="loan-trans">
+            <p class='loan-intro'>Request loan</p>
+
+            <form class="loan d-flex">
+              <!-- <div class="loan-input">
+                <input type="text" class="loan-input trans-input" id="loan" />
+                <p>Transfer to</p>
+              </div> -->
+              <div class="loan-label">
+                <input type="number" class="loan-input trans-input" />
+
+                <p class="amount">Amount</p>
+              </div>
+              <button class="login-btn2 btn">&rarr;</button>
+            </form>
+          </div>
+          <div class="acnt-closure-trans">
+            <p class='closure-intro'>Close account</p>
+
+            <form class="closure d-flex">
+              <div class="closure-input">
+                <input type="text" class="close-input trans-input" id="close" />
+                <p>Transfer to</p>
+              </div>
+              <div class="closure-label">
+                <input type="number" class="trans-input input2" />
+
+                <p class="amount">Amount</p>
+              </div>
+              <button class="login-btn2 btn">&rarr;</button>
+            </form>
         </div>
       </div>
     </main>
