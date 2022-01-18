@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="myBank.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <p class="welcome">Login to get started</p>
+      <form class="login">
+        <input type="text" class="user-name" placeholder="user" />
+        <input type="number" class="pin" placeholder="pin" maxlength="4" />
+        <button class="login-btn">&rarr;</button>
+      </form>
+    </nav>
+    <main class="app">
+      <div class="balance">
+        <div>
+          <p class="current-balance">Current Balance</p>
+          <p class="balance-date">
+            As of <span class="date"> 05/03/2022</span>
+          </p>
+        </div>
+        <p class="balance-value">0000</p>
+      </div>
+
+      <div class="movements">
+        <div class="movement-row">
+          <div class="movement-type movement-type-dep">deposite</div>
+          <div class="movement-date">3 days ago</div>
+          <div class="movement-value">4000</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="myBank.js"></script>
+  </body>
+</html>
